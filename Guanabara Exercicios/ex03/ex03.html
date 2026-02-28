@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var nome = window.prompt('Qual é o seu nome?' )
+        window.alert(`Olá, ${nome}! Seu nome tem ${nome.length} letras!`) //O length é para contar o numero de caracteres da string.
+        document.write(`O seu nome em maiúsculas é ${nome.toUpperCase()} <br>`) //O toUpperCase é para deixar a string toda em maiúscula.
+        document.write(`O seu nome em minúsculas é ${nome.toLowerCase()}`) //O toLowerCase é para deixar a string toda em minúscula.
+
+        var n1 = 1545.5
+        n1 = n1.toString() //O toString é para converter o numero em string.
+        document.write(`<br> O valor de n1 é ${n1} e agora ele é do tipo ${typeof n1}`) //O typeof é para mostrar o tipo da variável.
+        n1.toFixed(2) //O toFixed é para limitar o numero de casas decimais, nesse caso, 2 casas decimais. 
+        n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}) //O toLocaleString é para formatar o numero de acordo com a localidade, nesse caso, para o formato de moeda brasileira. 
+        n1.toFixed(2).replace('.', ',') //O replace é para substituir o ponto por vírgula, já que no formato brasileiro, a vírgula é usada para separar as casas decimais.
+    </script>
+</body>
+</html>
